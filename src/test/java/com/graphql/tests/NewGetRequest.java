@@ -13,7 +13,7 @@ public class NewGetRequest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		///post
 		 RestAssured.baseURI = "https://rahulshettyacademy.com";
 		 String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
 		 .body(Payload.AddPlace()).when().post("maps/api/place/add/json").
